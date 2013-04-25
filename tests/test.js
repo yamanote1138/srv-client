@@ -21,12 +21,32 @@ prompt.get(['host'], function (err, result) {
 
 function handleCmd(cmd){
 	switch(cmd){
-		case 'l':
+		case 'z':
 			srvClient.laserOn();
 			awaitCmd();
 			break
-		case 'L':
+		case 'Z':
 			srvClient.laserOff();
+			awaitCmd();
+			break
+		case 'f':
+			srvClient.forward();
+			awaitCmd();
+			break
+		case 'b':
+			srvClient.backward();
+			awaitCmd();
+			break
+		case 'l':
+			srvClient.left();
+			awaitCmd();
+			break
+		case 'r':
+			srvClient.right();
+			awaitCmd();
+			break
+		case 's':
+			srvClient.stop();
 			awaitCmd();
 			break
 		case 'd':
