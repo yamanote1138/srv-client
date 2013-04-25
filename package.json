@@ -14,11 +14,9 @@
 	},
 	"main": "index.js",
 	"scripts": {
-		"test": "mocha ./tests/test.js -t 10000"
+		"test": "node ./tests/test.js"
 	},
 	"dependencies": {
-		"chai": "*",
-		"mocha": "*",
 		"prompt": "*",
 		"request": "*",
 		"utile": "*"
