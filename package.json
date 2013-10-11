@@ -1,9 +1,5 @@
 {
-  "author": {
-    "name": "Chad Francis",
-    "email": "discgolfer1138@gmail.com",
-    "url": "http://www.thechad.io"
-  },
+  "author": "Chad Francis <discgolfer1138@gmail.com> (http://www.thechad.io)",
   "name": "node-surveyor",
   "description": "node wrapper for TCP communication with SRV-1 Surveyor robot",
   "version": "0.0.2",
@@ -32,5 +28,14 @@
   ],
   "devDependencies": {
     "prompt": "~0.2.11"
-  }
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "40d44d02e6149bc9fa4adefa701f288f34f53622",
+  "bugs": {
+    "url": "https://github.com/discgolfer1138/node-surveyor/issues"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "license": "MIT"
 }
