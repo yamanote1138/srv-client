@@ -1,63 +1,60 @@
-var srv = require('../lib/srv.js'),
-	prompt = require('prompt');
-
-	
-var srvClient;
+var SrvClient = require('../lib/srvClient.js'),
+	prompt = require('prompt'),
+	client;
 
 prompt.start();
 
 prompt.get(['host'], function (err, result) {
 	if (err) { console.log(err); return; }
-			
-	srvClient = new srv({
+
+	client = new SrvClient({
 		host: result.host
 	});
 
-	srvClient.connect(function(){
+	client.connect(function(){
 		awaitCmd();
 	});
-
 });
 
 function handleCmd(cmd){
 	switch(cmd){
 		case 'z':
-			srvClient.laserOn();
+			client.laserOn();
 			awaitCmd();
-			break
+			break;
 		case 'Z':
-			srvClient.laserOff();
+			client.laserOff();
 			awaitCmd();
-			break
+			break;
 		case 'f':
-			srvClient.forward();
+			client.forward();
 			awaitCmd();
-			break
+			break;
 		case 'b':
-			srvClient.backward();
+			client.backward();
 			awaitCmd();
-			break
+			break;
 		case 'l':
-			srvClient.left();
+			client.left();
 			awaitCmd();
-			break
+			break;
 		case 'r':
-			srvClient.right();
+			client.right();
 			awaitCmd();
-			break
+			break;
 		case 's':
-			srvClient.stop();
+			client.stop();
 			awaitCmd();
-			break
+			break;
 		case 'd':
 		case 'D':
-			srvClient.disconnect();
+			client.disconnect();
 			process.exit(code=0);
-			break
+			break;
 		default:
 			console.log('unknown cmd');
 			awaitCmd();
-			break
+			break;
 	}
 }
 
@@ -65,9 +62,9 @@ function awaitCmd(){
 	prompt.get(['cmd'], function (err, result){
 		if (err) {
 			console.log(err);
-			srvClient.disconnect();
+			client.disconnect();
 			process.exit(1);
 		}
 		handleCmd(result.cmd);
-	})
+	});
 }

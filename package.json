@@ -1,12 +1,12 @@
 {
   "author": "Chad Francis <discgolfer1138@gmail.com> (http://www.thechad.io)",
-  "name": "node-surveyor",
-  "description": "node wrapper for TCP communication with SRV-1 Surveyor robot",
+  "name": "srv-client",
+  "description": "node client to facilitate TCP communication with an SRV-1 Surveyor robot",
   "version": "0.0.2",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git://github.com/discgolfer1138/node-surveyor.git"
+    "url": "git://github.com/discgolfer1138/srv-client.git"
   },
   "main": "index.js",
   "scripts": {
@@ -32,7 +32,7 @@
   "readmeFilename": "README.md",
   "gitHead": "40d44d02e6149bc9fa4adefa701f288f34f53622",
   "bugs": {
-    "url": "https://github.com/discgolfer1138/node-surveyor/issues"
+    "url": "https://github.com/discgolfer1138/srv-client/issues"
   },
   "directories": {
     "test": "tests"
