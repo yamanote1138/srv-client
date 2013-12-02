@@ -3,7 +3,7 @@ srv-client
 
 node module to facilitate connection to and control of an SRV-1 Surveyor robot via tcp
 
-[![NPM](https://nodei.co/npm/srv-client.png)](https://nodei.co/npm/srv-client/)
+[![NPM](https://nodei.co/npm/srv-client.png?compact=true)](https://nodei.co/npm/srv-client/)
 
 ## Usage
 
