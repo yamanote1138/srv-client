@@ -1,4 +1,4 @@
-srv-client
+srv-client [![Build Status](https://travis-ci.org/discgolfer1138/srv-client.png?branch=master)](https://travis-ci.org/discgolfer1138/srv-client)
 =============
 
 node module to facilitate connection to and control of an SRV-1 Surveyor robot via tcp
