@@ -10,7 +10,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "node ./tests/test.js"
+    "test": "./node_modules/mocha/bin/mocha -R spec ./tests/unit.test.js"
   },
   "dependencies": {
     "request": "~2.27.0",
@@ -27,7 +27,8 @@
     "node"
   ],
   "devDependencies": {
-    "prompt": "~0.2.11"
+    "prompt": "~0.2.11",
+    "mocha": "~1.15.1"
   },
   "readmeFilename": "README.md",
   "gitHead": "40d44d02e6149bc9fa4adefa701f288f34f53622",
