@@ -13,8 +13,8 @@
     "test": "./node_modules/mocha/bin/mocha -R spec ./tests/unit.test.js"
   },
   "dependencies": {
-    "request": "~2.27.0",
-    "lodash": "~2.2.1"
+    "lodash": "^4.17.11",
+    "request": "^2.88.0"
   },
   "engines": {
     "node": "*"
@@ -27,8 +27,8 @@
     "node"
   ],
   "devDependencies": {
-    "prompt": "~0.2.11",
-    "mocha": "~1.15.1"
+    "mocha": "^5.2.0",
+    "prompt": "~0.2.11"
   },
   "readmeFilename": "README.md",
   "gitHead": "40d44d02e6149bc9fa4adefa701f288f34f53622",
