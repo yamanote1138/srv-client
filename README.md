@@ -12,33 +12,33 @@ configure and connect
 const SrvClient = require('srv-client');
 
 let client = new SrvClient({
-  host: '192.168.1.123'
-	port: 1138
+  host: '192.168.1.123',
+  port: 1138
 });
 
 client.connect(function(err){
-	// handle error and/or do stuff
+  // handle error and/or do stuff
 });
 
 ```
 move in specified direction (supported: forward, backward, left, right)
 ```javascript
 client.go('forward', function(err){
-	// handle error and/or do stuff
+  // handle error and/or do stuff
 });
 ```
 
 stop moving
 ```javascript
 client.stop(function(err){
-	// handle error and/or do stuff
+  // handle error and/or do stuff
 });
 ```
 
 turn laser on or off
 ```javascript
 client.setLaser('on', function(err){
-	// handle error and/or do stuff
+  // handle error and/or do stuff
 });
 ```
 ## Additional Info
