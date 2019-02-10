@@ -1,4 +1,4 @@
-srv-client [![Build Status](https://travis-ci.org/discgolfer1138/srv-client.png?branch=master)](https://travis-ci.org/discgolfer1138/srv-client)
+srv-client [![Build Status](https://travis-ci.org/yamanote1138/srv-client.png?branch=master)](https://travis-ci.org/yamanote1138/srv-client)
 =============
 
 node module to facilitate connection to and control of an SRV-1 Surveyor robot via tcp
@@ -7,35 +7,34 @@ node module to facilitate connection to and control of an SRV-1 Surveyor robot v
 
 ## Usage
 
-setup, configuration and connect
-
+configure and connect
 ```javascript
-var SrvClient = require('srv-client');
+const SrvClient = require('srv-client');
 
-var client = new SrvClient({
+let client = new SrvClient({
 	host: 'http://domain.com:1138'
 });
 
 client.connect(function(err){
 	// handle error and/or do stuff
 });
+
 ```
 move in specified direction (supported: forward, backward, left, right)
-
 ```javascript
 client.go('forward', function(err){
 	// handle error and/or do stuff
 });
 ```
-stop moving
 
+stop moving
 ```javascript
 client.stop(function(err){
 	// handle error and/or do stuff
 });
 ```
-turn laser on or off
 
+turn laser on or off
 ```javascript
 client.setLaser('on', function(err){
 	// handle error and/or do stuff

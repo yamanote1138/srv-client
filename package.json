@@ -28,7 +28,7 @@
   ],
   "devDependencies": {
     "mocha": "^5.2.0",
-    "prompt": "~0.2.11"
+    "prompt": "^1.0.0"
   },
   "readmeFilename": "README.md",
   "gitHead": "40d44d02e6149bc9fa4adefa701f288f34f53622",
