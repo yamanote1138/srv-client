@@ -1,11 +1,11 @@
-var SrvClient = require('../lib/srvClient.js'),
-	prompt = require('prompt'),
-	client;
+const SrvClient = require('../lib/srvClient.js');
+const prompt = require('prompt'); // eslint-disable-line node/no-unpublished-require
+let client;
 
 prompt.start();
 
 prompt.get(['host'], function (err, result) {
-	if (err) { console.log(err); return; }
+	if (err) throw err;
 
 	client = new SrvClient({
 		host: result.host
@@ -49,21 +49,18 @@ function handleCmd(cmd){
 		case 'd':
 		case 'D':
 			client.disconnect();
-			process.exit(code=0);
+			process.exitCode = 0;
 			break;
 		default:
-			console.log('unknown cmd');
-			awaitCmd();
-			break;
+			throw new Error('unknown command');
 	}
 }
 
 function awaitCmd(){
 	prompt.get(['cmd'], function (err, result){
 		if (err) {
-			console.log(err);
 			client.disconnect();
-			process.exit(1);
+			throw(err);
 		}
 		handleCmd(result.cmd);
 	});
