@@ -1,22 +1,27 @@
 {
-  "author": "Chad Francis <yamanote1138@gmail.com> (http://www.thechad.io)",
-  "name": "srv-client",
-  "description": "node client to facilitate TCP communication with an SRV-1 Surveyor robot",
-  "version": "1.0.1",
-  "private": false,
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/yamanote1138/srv-client.git"
+  "author": {
+    "email": "yamanote1138@gmail.com",
+    "name": "Chad Francis",
+    "url": "http://thechad.io"
   },
-  "main": "index.js",
-  "scripts": {
-    "lint": "./node_modules/eslint/bin/eslint.js --ignore-path .gitignore .",
-    "pretest": "./node_modules/eslint/bin/eslint.js --ignore-path .gitignore .",
-    "test": "./node_modules/mocha/bin/mocha -R spec ./tests/unit.test.js"
+  "bugs": {
+    "url": "https://github.com/yamanote1138/srv-client/issues"
   },
   "dependencies": {
     "lodash": "^4.17.11",
     "request": "^2.88.0"
+  },
+  "description": "node client to facilitate TCP communication with an SRV-1 Surveyor robot",
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "eslint-plugin-mocha": "^5.2.1",
+    "eslint-plugin-node": "^8.0.1",
+    "mocha": "^5.2.0",
+    "prompt": "^1.0.0"
+  },
+  "directories": {
+    "test": "tests"
   },
   "engines": {
     "node": ">=8.9.1"
@@ -28,21 +33,19 @@
     "tcp",
     "node"
   ],
-  "devDependencies": {
-    "eslint": "^5.13.0",
-    "eslint-config-strongloop": "^2.1.0",
-    "eslint-plugin-mocha": "^5.2.1",
-    "eslint-plugin-node": "^8.0.1",
-    "mocha": "^5.2.0",
-    "prompt": "^1.0.0"
-  },
+  "license": "MIT",
+  "main": "index.js",
+  "name": "srv-client",
+  "private": false,
   "readmeFilename": "README.md",
-  "gitHead": "40d44d02e6149bc9fa4adefa701f288f34f53622",
-  "bugs": {
-    "url": "https://github.com/yamanote1138/srv-client/issues"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yamanote1138/srv-client.git"
   },
-  "directories": {
-    "test": "tests"
+  "scripts": {
+    "lint": "./node_modules/eslint/bin/eslint.js --ignore-path .gitignore .",
+    "pretest": "./node_modules/eslint/bin/eslint.js --ignore-path .gitignore .",
+    "test": "./node_modules/mocha/bin/mocha -R spec ./tests/unit.test.js"
   },
-  "license": "MIT"
+  "version": "1.0.1"
 }
