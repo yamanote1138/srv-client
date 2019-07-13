@@ -1,10 +1,9 @@
 {
-<<<<<<< HEAD
   "author": {
     "email": "yamanote1138@gmail.com",
     "name": "Chad Francis",
     "url": "http://thechad.io"
-=======
+  },
   "author": "Chad Francis <yamanote1138@gmail.com> (http://www.thechad.io)",
   "name": "srv-client",
   "description": "node client to facilitate TCP communication with an SRV-1 Surveyor robot",
@@ -13,7 +12,6 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/yamanote1138/srv-client.git"
->>>>>>> 9fbfb56ebd12c6b366f1d23e1ce54d6c834af219
   },
   "bugs": {
     "url": "https://github.com/yamanote1138/srv-client/issues"
