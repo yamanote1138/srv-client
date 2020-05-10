@@ -2,7 +2,7 @@
   "author": "Chad Francis <yamanote1138@gmail.com> (http://www.thechad.io)",
   "name": "srv-client",
   "description": "node client to facilitate TCP communication with an SRV-1 Surveyor robot",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "private": false,
   "repository": {
     "type": "git",
