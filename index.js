@@ -1,1 +1,1 @@
-module.exports = require('./lib/srvClient');
+module.exports = require("./dist");
